@@ -19,14 +19,30 @@
 
 // ++ YOUR CODE below
 
+function hasDoubleLetters (strinput) {
 
+	var strinput = strinput.toLowerCase();
 
+	var char = "";
 
+	var counter = 0;
 
+	for (var i=0; i<strinput.length; i++) {
 
+		char = strinput[i];
+		var charnext = strinput[i+1];
 
+		if (char === charnext) {
+			counter++;
+		}
+	}
 
-
+	if (counter>0) {
+		return true;
+	} else {
+		return false;
+	}
+}
 
 
 // *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*

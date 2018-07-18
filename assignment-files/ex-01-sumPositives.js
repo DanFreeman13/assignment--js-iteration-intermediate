@@ -9,7 +9,22 @@
 
 // ++ YOUR CODE below
 
+function sumPositives (arrainput) {
+	var total = 0;
 
+	var num = 0;
+
+	for (var i = 0; i<arrainput.length; i++) {
+		num = arrainput[i]
+
+		if (num >=0 ) {
+			total += num
+		}
+	}
+
+	//console.log(total);
+	return total;
+}
 
 
 

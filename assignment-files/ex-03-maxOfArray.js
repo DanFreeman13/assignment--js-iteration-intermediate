@@ -8,15 +8,25 @@
 
 // ++ YOUR CODE below
 
+function maxOfArray (numarray) {
 
+	var maxOfAll = null;
 
+	var comparator = numarray[0]
 
+	for (var i = 1; i<numarray.length; i++) {
+		
+		if (numarray[i] > comparator) {
 
+			comparator = numarray[i];
 
-
-
-
-
+		} else {
+			comparator;
+		}
+	}
+	//console.log(comparator)
+	return comparator;
+}
 
 // *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 // *~*~*~*~*~*~*~* Tests (Don't Touch) *~*~*~*~*~*~*~*~*

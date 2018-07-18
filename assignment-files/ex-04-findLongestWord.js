@@ -8,15 +8,41 @@
 
 // ++ YOUR CODE below
 
+function findLongestWord (strinput) {
+  
+  var newArray = "";
+  
+  for (var i=0; i<strinput.length; i++) {
+    var char = strinput[i];
+    
+    if (char !== "'" && char !== ".") {
+      newArray += char;
+    } else {
+      newArray += " ";
+    }
+  }
+  
+  newArray=newArray.split(" ");
+  
+	var longestIs = newArray[0];
+	var control = newArray[0].length;
+  
 
+	for (var i=1; i<newArray.length; i++) {
+		var extract = newArray[i].length;
 
+		if (extract > control) {
+			control = extract;
+      longestIs = newArray[i];
 
+		} else {
+			control;
+			longestIs;
+		}
+	}
+	return longestIs;
 
-
-
-
-
-
+}
 
 // *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 // *~*~*~*~*~*~*~* Tests (Don't Touch) *~*~*~*~*~*~*~*~*

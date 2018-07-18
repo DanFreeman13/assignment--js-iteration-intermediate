@@ -13,15 +13,15 @@
 
  // ++ YOUR CODE below
 
+function sumDigits (num) {
+	num += "";
+	suma = 0;
+	for (var i=0; i<num.length; i++) {
+		suma +=  parseInt(num[i])
+	}
 
-
-
-
-
-
-
-
-
+	return suma;
+}
 
  // *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
  // *~*~*~*~*~*~*~* Tests (Don't Touch) *~*~*~*~*~*~*~*~*
