@@ -18,7 +18,7 @@ function findLongestWord (strinput) {
     if (char !== "'" && char !== ".") {
       newArray += char;
     } else {
-      newArray += " ";
+      newArray += "";
     }
   }
   
